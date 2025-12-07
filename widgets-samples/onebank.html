@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <title>Webex Calling Widget</title>
+
+  <script src="https://cdn.jsdelivr.net/npm/@webex/widgets/dist/bundle.js"></script>
+
+  <style>
+    #widget {
+      width: 450px;
+      height: 600px;
+      border: 1px solid #555;
+      border-radius: 10px;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>Videollamada Webex – Evaluación</h2>
+  <div id="widget"></div>
+
+  <script>
+    webex.widget("#widget").call({
+      accessToken: "OWU5NjcyMDgtYWFhMS00MDQzLWFiMzctYmM1MmE0NjE3ZjUzYjgxNTYzMjEtYzI4_P0A1_f4607fa7-083c-46c3-8b16-fa33531b27b0",
+      destination: "cr.albornozl@duocuc.cl"
+    });
+  </script>
+
+</body>
+</html>
